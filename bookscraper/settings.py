@@ -15,8 +15,8 @@ NEWSPIDER_MODULE = "bookscraper.spiders"
 FEEDS = {'book.csv': {'format':'csv'}}     ### Custom savefile name
 
 SSCRAPEOPS_API_KEY = '2f654702-7f6b-4eab-81c1-3b14e1962246' 
-SCRAPEOPS_FAKE_BROWSER_HEADER_ENDPOINT = 'https://headers.scrapeops.io/v1/browser-headers'
-SCRAPEOPS_FAKE_BROWSER_HEADER_ENABLED = True
+SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = 'https://headers.scrapeops.io/v1/user-agents'
+SCRAPEOPS_FAKE_USER_AGENT_ENABLED = True
 SCRAPEOPS_NUM_RESULTS = 10
 
 
@@ -24,7 +24,7 @@ SCRAPEOPS_NUM_RESULTS = 10
 #USER_AGENT = "bookscraper (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
